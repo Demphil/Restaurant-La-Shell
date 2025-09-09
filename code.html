@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moroccan Roadside Grill - Khouribga Eatery</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            scrollbar-width: thin;
+        }
+        .hero-bg {
+            background: linear-gradient(135deg, #f4a261, #e9c46a);
+        }
+        .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: scale(1.03);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        .pattern-bg {
+            background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23d4af37' fill-opacity='0.1' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0h1L41 41H0z'/%3E%3C/g%3E%3C/svg%3E");
+        }
+        img {
+            border-radius: 10px;
+        }
+        .fallback {
+            display: none;
+            background-color: #d4a574;
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
+</head>
+<body class="text-gray-900 bg-amber-50">
+    <!-- Navigation -->
+    <nav class="bg-orange-500 shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-white"><i class="fas fa-utensils mr-2"></i>Moroccan Roadside Grill</h1>
+            <ul class="hidden md:flex space-x-8 text-white">
+                <li><a href="#home" class="hover:text-amber-200 transition">Home</a></li>
+                <li><a href="#interior" class="hover:text-amber-200 transition">Interior</a></li>
+                <li><a href="#menu" class="hover:text-amber-200 transition">Menu</a></li>
+                <li><a href="#contact" class="hover:text-amber-200 transition">Contact</a></li>
+            </ul>
+            <button class="md:hidden text-white focus:outline-none" id="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <div class="hidden md:hidden bg-orange-600 px-4" id="mobile-menu">
+            <ul class="space-y-2 text-white">
+                <li><a href="#home" class="block py-2 hover:text-amber-200">Home</a></li>
+                <li><a href="#interior" class="block py-2 hover:text-amber-200">Interior</a></li>
+                <li><a href="#menu" class="block py-2 hover:text-amber-200">Menu</a></li>
+                <li><a href="#contact" class="block py-2 hover:text-amber-200">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg text-center py-24">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-5xl font-extrabold text-white mb-6 drop-shadow-lg">Welcome to Moroccan Roadside Grill in Khouribga</h2>
+            <p class="text-xl text-amber-100 mb-10 max-w-2xl mx-auto leading-relaxed">Experience a cozy, family-friendly spot blending Moroccan tradition with roadside charm. Enjoy natural light, warm hospitality, and delicious bites perfect for travelers and locals.</p>
+            <div class="card mb-6">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/cf885e55-04d5-40dd-a6df-2c2d4a220177.png" alt="Sunny exterior view of modern Moroccan roadside restaurant facade with large glass windows, bright Arabic-French signage featuring geometric patterns in reds and golds, outdoor terra cotta tiled area with shaded umbrella tables, clear blue sky and warm sunlight typical of Khouribga city, welcoming entrance doors framed in dark metal" onload="this.style.opacity=1" onerror="this.onerror=null; this.nextElementSibling.style.display='block'; this.style.display='none'" class="w-full max-w-4xl mx-auto rounded-lg shadow-2xl opacity-0 transition-opacity duration-700" />
+                <div class="fallback">Image of the restaurant exterior could not load – envision a vibrant, sunny facade with traditional signage and outdoor seating in Khouribga.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interior Section -->
+    <section id="interior" class="py-20 bg-white pattern-bg">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">Discover Our Cozy Interior</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <div class="flex flex-col">
+                    <h3 class="text-2xl font-semibold text-orange-600 mb-4">Natural Light & Warm Vibes</h3>
+                    <p class="text-lg text-gray-700 mb-6 leading-loose">Large glass windows bathe the space in sunlight, while decorative patterned metal partitions add Moroccan elegance without blocking the view. Red tablecloths on round tables create a cozy, inviting atmosphere for all.</p>
+                    <div class="card">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/afa24787-7fc5-4f6e-8deb-011d0b0438a0.png" alt="Bright interior of modern Moroccan restaurant with floor-to-ceiling glass windows allowing natural sunlight, intricate patterned metal partitions featuring golden geometric designs, round wooden tables draped in vibrant red tablecloths, snug wooden chairs with cushions, warm terracotta walls, and zellige tiled floor in muted earthy tones" onload="this.style.opacity=1" onerror="this.onerror=null; this.nextElementSibling.style.display='block'; this.style.display='none'" class="rounded-lg shadow-lg opacity-0 transition-opacity duration-500" />
+                        <div class="fallback">Image of the interior could not load – picture a sunlit space with traditional partitions and cozy tables.</div>
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <h3 class="text-2xl font-semibold text-green-600 mb-4">Neat Details & Hospitality</h3>
+                    <p class="text-lg text-gray-700 mb-6 leading-loose">Each table is meticulously set with white plates, polished cutlery, and clear glasses, ensuring practicality and cleanliness. Our self-service stations and clear signage make it effortless for travelers to enjoy a meal.</p>
+                    <div class="card">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/c0a2b7c9-d8c4-4700-9e3f-1bc7ff991b03.png" alt="Detailed view of a set round table in Moroccan restaurant with red tablecloth, white ceramic plate holding sesame-seed burger with juicy patty and veggies, glass of water and knife-fork, external canned Mirinda drink in background, all atop tiled floor with subtleMui patterns" onload="this.style.opacity=1" onerror="this.onerror=null; this.nextElementSibling.style.display='block'; this.style.display='none'" class="rounded-lg shadow-lg opacity-0 transition-opacity duration-500" />
+                        <div class="fallback">Table setting image could not load – imagine a neatly arranged table ready for a family meal.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="py-20 bg-amber-100">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">Our Roadside Favorites</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg p-6 text-center card shadow-md">
+                    <div class="card mb-4">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/6b4195c5-246a-4a0d-be31-be4c4ebe975b.png" alt="Appetizing sesame-seed burger platter with juicy beef patty topped with lettuce, tomato, onions, and Moroccan sauce in a soft bun sprinkled with sesame seeds, served on white plate with side fries and aioli dip, presented in casual roadside dining style" onload="this.style.opacity=1" onerror="this.onerror=null; this.nextElementSibling.style.display='block'; this.style.display='none'" class="rounded-lg opacity-0 transition-opacity duration-500" />
+                        <div class="fallback">Image of sesame-seed burger could not load – visualize a tasty, sesame-topped burger with fresh ingredients.</div>
+                    </div>
+                    <h3 class="text-xl font-semibold text-orange-600 mb-2">Sesame-Seed Burger</h3>
+                    <p class="text-gray-600 mb-4">A Moroccan-inspired classic: Juicy patty with fresh veggies, sauce, and sesame seeds on a soft bun.</p>
+                    <p class="font-bold text-green-700">45 MAD</p>
+                </div>
+                <div class="bg-white rounded-lg p-6 text-center card shadow-md">
+                    <div class="card mb-4">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/e1ab914d-9c78-4184-aa76-750cb67fc5d3.png" alt="Chilled glass-front refrigerator displaying assortment of canned drinks including Mirinda orange soda, Coca-Cola classic in red cans, and sparkling mineral water, with Moroccan geometric design on the frame, set in a sunny roadside eatery" onload="this.style.opacity=1" onerror="this.onerror=null; this.nextElementSibling.style.display='block'; this.style.display='none'" class="rounded-lg opacity-0 transition-opacity duration-500" />
+                        <div class="fallback">Image of canned drinks could not load – picture a selection of chilled sodas ready for a quick refresh.</div>
+                    </div>
+                    <h3 class="text-xl font-semibold text-blue-600 mb-2">Refreshing Canned Drinks</h3>
+                    <p class="text-gray-600 mb-4">Cool off with Mirinda, Cola, or water – the perfect companion to your meal.</p>
+                    <p class="font-bold text-green-700">From 10 MAD</p>
+                </div>
+                <div class="bg-white rounded-lg p-6 text-center card shadow-md">
+                    <div class="card mb-4">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/596eb741-f52b-43c0-b683-7797b23e877c.png" alt="Cozy family dining scene with diverse group laughing around a round table covered in red tablecloth, plates of sesame burgers and rice, glasses of Mirinda soda, in a sunlit modern Moroccan restaurant with patterned metal partitions in background" onload="this.style.opacity=1" onerror="this.onerror=null; this.nextElementSibling.style.display='block'; this.style.display='none'" class="rounded-lg opacity-0 transition-opacity duration-500" />
+                        <div class="fallback">Image of family dining could not load – imagine a welcoming group enjoying casual meals together.</div>
+                    </div>
+                    <h3 class="text-xl font-semibold text-purple-600 mb-2">Casual Family Meals</h3>
+                    <p class="text-gray-600 mb-4">Generous portions and fun atmosphere for families and groups – perfect for road trips.</p>
+                    <p class="font-bold text-green-700">150 MAD</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact/Footer -->
+    <footer id="contact" class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h3 class="text-2xl font-bold mb-6">Visit Us in Khouribga</h3>
+            <p class="text-lg mb-4"><i class="fas fa-map-marker-alt mr-2"></i>Main Highway, Khouribga, Morocco</p>
+            <p class="text-lg mb-6"><i class="fas fa-phone mr-2"></i>(+212) 6XX-XXXXXX | <i class="fas fa-envelope mr-2"></i>info@moroccanroadside.ma</p>
+            <p class="text-sm opacity-75">© 2023 Moroccan Roadside Grill. Welcoming travelers and locals with warmth and flavor.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+
+        // Smooth scroll for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+                // Close mobile menu on click
+                if (window.innerWidth < 768) {
+                    document.getElementById('mobile-menu').classList.add('hidden');
+                }
+            });
+        });
+
+        // Add opacity to images on load for fade-in
+        document.addEventListener('DOMContentLoaded', function() {
+            const images = document.querySelectorAll('img');
+            images.forEach(img => {
+                if (img.complete) img.style.opacity = 1;
+            });
+        });
+    </script>
+</body>
+</html>
+</content>
+</create_file>
